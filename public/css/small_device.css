@@ -1,0 +1,255 @@
+/***********************************************************************************************/
+/*  */
+/***********************************************************************************************/
+
+/*for microsoft (win8)*/
+@-ms-viewport{
+    width: device-width;
+}
+
+*{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 900px){
+    /**************** Slider *****************/
+    #slider {
+        margin-bottom: 25px;
+    }
+    #slider ul {
+        height: 190px;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 710px;
+    }
+    #slider ul li {
+        display: block;
+        float: left;
+        height: 190px;
+        width: 340px;
+    }
+    #slider ul li + li > div {
+        margin-left: 30px;
+    }
+    #slider ul li img {
+        width: 100%;
+        height: auto;
+        max-height: 190px
+    }
+    #nav-slider {
+        display: block;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    #slider ul li + li h4 {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    /**************** Header *****************/
+    .main-header{
+        padding: 15px 30px;
+    }
+
+    .main-nav ul{
+        display: none;
+    }
+    .main-nav{
+        padding: 16px;
+        position: relative;
+    }
+
+    /**************** Menu *****************/
+    .main-nav ul.menu-responsive{
+        background-color: #c72a47;
+        display: block;
+        float: left;
+        left: 0;
+        position: absolute;
+        top: 56px;
+        width: 100%;
+    }
+    .main-nav ul li {
+        float: none;
+        display: block;
+        background-color: #c72a47;
+        width: 100%;
+        border-bottom: 1px solid #fa9d7b;
+        border-radius: 3px;
+    }
+
+    .main-nav li:before
+    {
+        display: none;
+    }
+
+    .main-nav li:first-child{
+        border-top: 1px solid #fa9d7b;
+    }
+
+    .main-nav ul li:last-child{
+        border-bottom: none;
+    }
+
+    .bg_nav{
+        height: 56px;
+    }
+
+    .head-contact{
+        margin: 27px 0 20px;
+    }
+
+    .main-nav .three-lines-menu,
+    .main-nav .menu-min{
+        display: block;
+        float: left;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .main-nav .three-lines-menu{
+        font-size: 23px;
+    }
+
+    .main-nav .menu-min{
+        padding-left: 3%;
+    }
+
+    /**************** Main *****************/
+    .main_top {
+        background: url('/css/images/pc-tablet.jpg') no-repeat center center;
+        min-height: 348px;
+        min-width: 100%;
+        padding: 23% 5% 0;
+    }
+    .main_top h1{
+        font-size: 30px;
+    }
+
+    .main_top h1 .font-header{
+        font-size: 46px;
+        line-height: 46px;
+    }
+
+    .main_content, .main_category{
+        float: none;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+    }
+
+    .main_content{
+        margin-bottom: 0;
+    }
+
+    .main_category ul{
+        float: left;
+    }
+
+    .main_category{
+        margin-left: 0;
+    }
+
+    .main_category hr + ul{
+        margin-right: 20%
+    }
+
+    /**************** Footer *****************/
+    .pink-footer h1,.social-icons{
+        float: none;
+    }
+    .content-pink, .content-gray{
+        text-align: center;
+    }
+    .pink-footer h1{
+        padding-top: 38px;
+    }
+
+    .pink-footer .facebook, .pink-footer .linkedin{
+        float: none;
+        margin: 0 auto;
+    }
+
+    .social-icons .linkedin{
+        margin-top: 15px;
+    }
+
+}
+
+@media (max-width: 630px){
+    /**************** Slider *****************/
+    #slider ul {
+        width: 280px;
+    }
+}
+
+@media (max-width: 320px){
+    /**************** Header *****************/
+    .main-header{
+        padding: 15px 22px;
+    }
+
+    .main-header{
+        text-align: center;
+    }
+
+    .head-contact{
+        font-size: 12px;
+        line-height: 18px;
+        margin: 15px 0 20px;
+    }
+
+    .logo, .head-contact{
+        float: none;
+    }
+
+    /**************** Menu *****************/
+    .main-nav .menu-min{
+        padding-left: 36%;
+    }
+    /**************** Main *****************/
+    .main_top h1{
+        font-size: 21px;
+        line-height: 32px;
+    }
+
+    .main_top h1 .font-header{
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .main_top {
+        background: url('/css/images/pc-mob.jpg') no-repeat center center;
+        padding: 30% 5% 0;
+        min-height: 230px;
+        min-width: 100%;
+    }
+
+    .main_content p{
+        font-size: 14px;
+    }
+
+    /**************** Footer *****************/
+    .copyright, .rights{
+        padding: 2px 0;
+    }
+
+    .content-gray{
+        text-align: center;
+        padding: 20px 65px;
+    }
+
+    .rights{
+        margin-bottom: 26px;
+    }
+
+}
+
+
